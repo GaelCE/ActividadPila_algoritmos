@@ -34,6 +34,13 @@ public class Pila<T>{
         }
     }
 
+    public T verTope(){
+        if(vacia()){
+            return null;
+        }
+        return pila[tope];
+    }
+
     public boolean llena(){
         return tope==pila.length-1;
     }
